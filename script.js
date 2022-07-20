@@ -88,7 +88,7 @@ const play = () => {
     // play
     console.clear();
     let input = prompt(
-      "\t\tRock, Paper, Scissors!!!\n\nChoose to start\n1 - vs COM\n2 - Exit"
+      "\t\tRock, Paper, Scissors!!!\n\nChoose a number:\n1 - vs COM\n2 - Exit"
     );
 
     switch (input) {
