@@ -31,14 +31,13 @@ const userPlay = () => {
 const evalRound = (playerSelection, computerSelection) => {
   // Evaluates the round and checks who's the winner
 
+  if (playerSelection === computerSelection) return `That's a tie!!`;
   switch (playerSelection) {
     case "rock": {
       if (computerSelection === "paper") {
         return "You Lose! Paper beats Rock.";
       } else if (computerSelection === "scissors") {
         return "You Win! Rock beats Scissors.";
-      } else if (computerSelection === "rock") {
-        return "That's a Tie!";
       }
       break;
     }
@@ -47,8 +46,6 @@ const evalRound = (playerSelection, computerSelection) => {
         return "You Lose! Scissors beats Paper.";
       } else if (computerSelection === "rock") {
         return "You Win! Paper beats Rock.";
-      } else if (computerSelection === "paper") {
-        return "That's a Tie!";
       }
       break;
     }
@@ -57,8 +54,6 @@ const evalRound = (playerSelection, computerSelection) => {
         return "You Lose! Rock beats Scissors.";
       } else if (computerSelection === "paper") {
         return "You Win! Scissors beats Paper.";
-      } else if (computerSelection === "scissors") {
-        return "That's a Tie!";
       }
       break;
     }
